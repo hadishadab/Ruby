@@ -1,0 +1,40 @@
+while 1
+class Calculator
+   puts "Enter the OP1:"
+   OP1 = gets.chomp.to_i
+   puts "Enter the OP2:"
+   OP2 = gets.chomp.to_i
+
+   def add
+       puts "adding",OP1 + OP2
+   end
+   def sub
+       puts "subtracting",OP1 - OP2
+    end
+   def mul
+     puts "multiplying",OP1 * OP2
+   end
+   def div
+     puts "dividing",OP1 / OP2.to_f
+   end
+end
+
+# Create Objects
+
+object=Calculator.new()
+puts "Enter the type of operation(add or sub or mul or div)"
+x =gets.chomp
+case x
+  
+when 'add'
+ object.add
+when 'sub'
+ object.sub
+when 'mul'
+ object.mul
+when 'div'
+ object.div
+else
+ puts"enter only numbers"
+end
+end
